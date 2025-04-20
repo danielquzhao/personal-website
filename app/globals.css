@@ -98,4 +98,7 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+  a.force-underline {
+    text-decoration: underline !important;
+  }
 }

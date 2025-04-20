@@ -47,8 +47,8 @@ export default function Home() {
           <div className="space-y-6">
             <h1 className="text-4xl font-bold tracking-tight lg:text-5xl">Hi there, I&apos;m Daniel! 👋</h1>
             <p className="text-xl text-gray-400">
-              I&apos;m a first year Computer Science student at the{" "}
-              <Link href="https://uwaterloo.ca" className="text-white hover:underline">
+              I&apos;m a second year Computer Science student at the{" "}
+              <Link href="https://cs.uwaterloo.ca" className="text-white hover:underline" target="_blank" rel="noopener noreferrer">
                 University of Waterloo
               </Link>
               .
@@ -58,21 +58,30 @@ export default function Home() {
               <ul className="space-y-2">
                 <li className="flex items-center gap-2">
                   <span className="text-gray-400">•</span>
-                  <span>Studying Computer Science @ UWaterloo</span>
+                  <span className="text-gray-400">Autonomy Software Developer at{" "}
+                    <Link href="https://www.uwarg.com" className="text-white hover:underline" target="_blank" rel="noopener noreferrer">
+                      WARG
+                    </Link>
+                  </span>
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="text-gray-400">•</span>
-                  <span>Working on personal projects</span>
+                  <span className="text-gray-400">Web Developer at <span className="text-white">Classic Acupuncture Inc</span>
+                  </span>
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="text-gray-400">•</span>
-                  <span>Learning web development</span>
+                  <span className="text-gray-400">Software Developer at{" "}
+                    <Link href="https://uwrealitylabs.com/" className="text-white hover:underline" target="_blank" rel="noopener noreferrer">
+                      Waterloo Reality Labs
+                    </Link>
+                  </span>
                 </li>
               </ul>
             </div>
             <div>
               <Button asChild className="gap-2">
-                <Link href="/resume.pdf">
+                <Link href="/DanielZhao.pdf" target="_blank" rel="noopener noreferrer">
                   Download my Resume <Download className="h-4 w-4" />
                 </Link>
               </Button>
