@@ -44,7 +44,7 @@ export default function Home() {
 
       <main className="container mx-auto flex-1 py-12">
         <section className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20">
-          <div className="space-y-6">
+          <div className="space-y-6 order-2 md:order-1">
             <h1 className="text-4xl font-bold tracking-tight lg:text-5xl">Hi there, I&apos;m Daniel! 👋</h1>
             <p className="text-xl text-gray-400">
               I&apos;m a second year Computer Science student at the{" "}
@@ -87,7 +87,7 @@ export default function Home() {
               </Button>
             </div>
           </div>
-          <div className="flex justify-center">
+          <div className="flex justify-center order-1 md:order-2">
             <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white/10">
               <Image
                 src="/placeholder.svg?height=320&width=320"
@@ -107,12 +107,12 @@ export default function Home() {
           <h2 className="text-2xl font-bold mb-6">About Me</h2>
           <div className="prose prose-invert max-w-none">
             <p>
-              I&apos;m a passionate Computer Science student with interests in web development, artificial intelligence,
+              I&apos;m a passionate Computer Science student with interests in full stack web development, artificial intelligence,
               and software engineering. Currently exploring the vast world of technology and looking for opportunities
               to grow and learn.
             </p>
             <p>
-              When I&apos;m not coding, you can find me reading tech blogs, playing basketball, or exploring new places.
+              When I&apos;m not coding, you can find me running, playing piano, or exploring new places.
               I&apos;m always open to connecting with fellow tech enthusiasts and discussing exciting ideas.
             </p>
           </div>
