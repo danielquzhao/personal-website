@@ -1,0 +1,216 @@
+"use client"
+
+import Image from "next/image"
+import Link from "next/link"
+import { Github, Linkedin, Mail, ArrowRight, Download, ArrowUp } from "lucide-react"
+import { Button } from "@/components/ui/button"
+
+export default function Home() {
+  return (
+    <div className="flex min-h-screen flex-col">
+      <header className="container mx-auto flex items-center justify-between py-6">
+        <Link href="/" className="text-xl font-semibold">
+          Daniel Zhao
+        </Link>
+        <nav className="flex items-center gap-6">
+          <Link href="/projects" className="text-sm text-gray-400 hover:text-white transition-colors">
+            Projects
+          </Link>
+          <Link href="/blog" className="text-sm text-gray-400 hover:text-white transition-colors">
+            Blog
+          </Link>
+          <Link href="/photos" className="text-sm text-gray-400 hover:text-white transition-colors">
+            Photos
+          </Link>
+          <Button variant="ghost" size="icon" className="rounded-full">
+            <span className="sr-only">Toggle theme</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="lucide lucide-moon"
+            >
+              <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+            </svg>
+          </Button>
+        </nav>
+      </header>
+
+      <main className="container mx-auto flex-1 py-12">
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20">
+          <div className="space-y-6">
+            <h1 className="text-4xl font-bold tracking-tight lg:text-5xl">Hi there, I&apos;m Daniel! 👋</h1>
+            <p className="text-xl text-gray-400">
+              I&apos;m a first year Computer Science student at the{" "}
+              <Link href="https://uwaterloo.ca" className="text-white hover:underline">
+                University of Waterloo
+              </Link>
+              .
+            </p>
+            <div className="space-y-4">
+              <h2 className="text-xl font-semibold">Currently:</h2>
+              <ul className="space-y-2">
+                <li className="flex items-center gap-2">
+                  <span className="text-gray-400">•</span>
+                  <span>Studying Computer Science @ UWaterloo</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-gray-400">•</span>
+                  <span>Working on personal projects</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-gray-400">•</span>
+                  <span>Learning web development</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <Button asChild className="gap-2">
+                <Link href="/resume.pdf">
+                  Download my Resume <Download className="h-4 w-4" />
+                </Link>
+              </Button>
+            </div>
+          </div>
+          <div className="flex justify-center">
+            <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white/10">
+              <Image
+                src="/placeholder.svg?height=320&width=320"
+                alt="Daniel Zhao"
+                fill
+                className="object-cover"
+                priority
+              />
+              <div className="absolute -bottom-1 -right-1 bg-yellow-500 p-3 rounded-full">
+                <span className="text-2xl">🚀</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-20">
+          <h2 className="text-2xl font-bold mb-6">About Me</h2>
+          <div className="prose prose-invert max-w-none">
+            <p>
+              I&apos;m a passionate Computer Science student with interests in web development, artificial intelligence,
+              and software engineering. Currently exploring the vast world of technology and looking for opportunities
+              to grow and learn.
+            </p>
+            <p>
+              When I&apos;m not coding, you can find me reading tech blogs, playing basketball, or exploring new places.
+              I&apos;m always open to connecting with fellow tech enthusiasts and discussing exciting ideas.
+            </p>
+          </div>
+          <div className="mt-6">
+            <Link href="/about" className="inline-flex items-center text-sm text-gray-400 hover:text-white">
+              Learn more about me <ArrowRight className="ml-1 h-4 w-4" />
+            </Link>
+          </div>
+        </section>
+
+        <section className="mb-20">
+          <h2 className="text-2xl font-bold mb-6">Featured Projects</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[1, 2, 3].map((i) => (
+              <div key={i} className="border border-gray-800 rounded-lg p-6 hover:border-gray-700 transition-colors">
+                <h3 className="text-lg font-semibold mb-2">Project {i}</h3>
+                <p className="text-gray-400 mb-4">
+                  A brief description of this amazing project that showcases my skills and creativity.
+                </p>
+                <div className="flex gap-2 mb-4">
+                  <span className="text-xs bg-gray-800 px-2 py-1 rounded">React</span>
+                  <span className="text-xs bg-gray-800 px-2 py-1 rounded">TypeScript</span>
+                  <span className="text-xs bg-gray-800 px-2 py-1 rounded">Tailwind</span>
+                </div>
+                <Link
+                  href={`/projects/${i}`}
+                  className="text-sm text-gray-400 hover:text-white inline-flex items-center"
+                >
+                  View project <ArrowRight className="ml-1 h-4 w-4" />
+                </Link>
+              </div>
+            ))}
+          </div>
+          <div className="mt-6">
+            <Link href="/projects" className="inline-flex items-center text-sm text-gray-400 hover:text-white">
+              View all projects <ArrowRight className="ml-1 h-4 w-4" />
+            </Link>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-bold mb-6">Get In Touch</h2>
+          <p className="text-gray-400 mb-6">
+            Feel free to reach out if you want to connect, collaborate, or just chat about tech!
+          </p>
+          <div className="flex flex-wrap gap-4">
+            <Button asChild variant="outline" className="gap-2">
+              <Link href="mailto:daniel.zhao@example.com">
+                <Mail className="h-4 w-4" /> Email
+              </Link>
+            </Button>
+            <Button asChild variant="outline" className="gap-2">
+              <Link href="https://github.com/danielzhao" target="_blank" rel="noopener noreferrer">
+                <Github className="h-4 w-4" /> GitHub
+              </Link>
+            </Button>
+            <Button asChild variant="outline" className="gap-2">
+              <Link href="https://linkedin.com/in/danielzhao" target="_blank" rel="noopener noreferrer">
+                <Linkedin className="h-4 w-4" /> LinkedIn
+              </Link>
+            </Button>
+          </div>
+        </section>
+      </main>
+
+      <footer className="border-t border-gray-800 mt-12">
+        <div className="container mx-auto py-8">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <div className="flex items-center mb-4 md:mb-0">
+              <Button
+                variant="ghost"
+                size="icon"
+                className="rounded-full"
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              >
+                <ArrowUp className="h-4 w-4" />
+                <span className="sr-only">Back to top</span>
+              </Button>
+              <span className="text-sm text-gray-500 ml-2">© 2025 Daniel Zhao</span>
+            </div>
+            <div className="flex gap-6">
+              <Link
+                href="https://github.com/danielzhao"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-500 hover:text-white"
+              >
+                <Github className="h-5 w-5" />
+                <span className="sr-only">GitHub</span>
+              </Link>
+              <Link
+                href="https://linkedin.com/in/danielzhao"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-500 hover:text-white"
+              >
+                <Linkedin className="h-5 w-5" />
+                <span className="sr-only">LinkedIn</span>
+              </Link>
+              <Link href="mailto:daniel.zhao@example.com" className="text-gray-500 hover:text-white">
+                <Mail className="h-5 w-5" />
+                <span className="sr-only">Email</span>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  )
+}
