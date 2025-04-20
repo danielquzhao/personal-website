@@ -13,6 +13,9 @@ export default function Home() {
           Daniel Zhao
         </Link>
         <nav className="flex items-center gap-6">
+          <Link href="/about" className="text-sm text-gray-400 hover:text-white transition-colors">
+            About
+          </Link>
           <Link href="/projects" className="text-sm text-gray-400 hover:text-white transition-colors">
             Projects
           </Link>
