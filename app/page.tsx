@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { Github, Linkedin, Mail, ArrowRight, Download, ArrowUp } from "lucide-react"
+import { Github, Linkedin, Mail, ArrowRight, Download, ArrowUp, ExternalLink } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export default function Home() {
@@ -18,9 +18,6 @@ export default function Home() {
           </Link>
           <Link href="/projects" className="text-sm text-gray-400 hover:text-white transition-colors">
             Projects
-          </Link>
-          <Link href="/blog" className="text-sm text-gray-400 hover:text-white transition-colors">
-            Blog
           </Link>
           <Link href="/photos" className="text-sm text-gray-400 hover:text-white transition-colors">
             Photos
@@ -126,7 +123,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mb-20">
+        <section className="-mb-10">
           <h2 className="text-2xl font-bold mb-6">Featured Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[1, 2, 3].map((i) => (
@@ -140,12 +137,24 @@ export default function Home() {
                   <span className="text-xs bg-gray-800 px-2 py-1 rounded">TypeScript</span>
                   <span className="text-xs bg-gray-800 px-2 py-1 rounded">Tailwind</span>
                 </div>
-                <Link
-                  href={`/projects/${i}`}
-                  className="text-sm text-gray-400 hover:text-white inline-flex items-center"
-                >
-                  View project <ArrowRight className="ml-1 h-4 w-4" />
-                </Link>
+                <div className="flex gap-4">
+                  <Link
+                    href={`https://github.com/yourusername/project${i}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-gray-400 hover:text-white inline-flex items-center"
+                  >
+                    <Github className="mr-1 h-4 w-4" /> Code
+                  </Link>
+                  <Link
+                    href={`https://project${i}.demo.com`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-gray-400 hover:text-white inline-flex items-center"
+                  >
+                    <ExternalLink className="mr-1 h-4 w-4" /> Demo
+                  </Link>
+                </div>
               </div>
             ))}
           </div>
@@ -153,30 +162,6 @@ export default function Home() {
             <Link href="/projects" className="inline-flex items-center text-sm text-gray-400 hover:text-white">
               View all projects <ArrowRight className="ml-1 h-4 w-4" />
             </Link>
-          </div>
-        </section>
-
-        <section>
-          <h2 className="text-2xl font-bold mb-6">Get In Touch</h2>
-          <p className="text-gray-400 mb-6">
-            Feel free to reach out if you want to connect, collaborate, or just chat about tech!
-          </p>
-          <div className="flex flex-wrap gap-4">
-            <Button asChild variant="outline" className="gap-2">
-              <Link href="mailto:daniel.zhao@example.com">
-                <Mail className="h-4 w-4" /> Email
-              </Link>
-            </Button>
-            <Button asChild variant="outline" className="gap-2">
-              <Link href="https://github.com/danielzhao" target="_blank" rel="noopener noreferrer">
-                <Github className="h-4 w-4" /> GitHub
-              </Link>
-            </Button>
-            <Button asChild variant="outline" className="gap-2">
-              <Link href="https://linkedin.com/in/danielzhao" target="_blank" rel="noopener noreferrer">
-                <Linkedin className="h-4 w-4" /> LinkedIn
-              </Link>
-            </Button>
           </div>
         </section>
       </main>
@@ -198,7 +183,7 @@ export default function Home() {
             </div>
             <div className="flex gap-6">
               <Link
-                href="https://github.com/danielzhao"
+                href="https://github.com/danielquzhao"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-500 hover:text-white"
@@ -207,7 +192,7 @@ export default function Home() {
                 <span className="sr-only">GitHub</span>
               </Link>
               <Link
-                href="https://linkedin.com/in/danielzhao"
+                href="https://linkedin.com/in/danielquzhao"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-500 hover:text-white"
@@ -215,7 +200,7 @@ export default function Home() {
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
-              <Link href="mailto:daniel.zhao@example.com" className="text-gray-500 hover:text-white">
+              <Link href="mailto:danielquzhao@gmail.com" className="text-gray-500 hover:text-white">
                 <Mail className="h-5 w-5" />
                 <span className="sr-only">Email</span>
               </Link>

@@ -19,7 +19,7 @@ export default function AboutPage() {
                 <Image src="/placeholder.svg?height=400&width=400" alt="Daniel Zhao" fill className="object-cover" />
               </div>
               <h1 className="text-3xl font-bold mb-4">Daniel Zhao</h1>
-              <p className="text-gray-400 mb-6">First-year Computer Science student at the University of Waterloo</p>
+              <p className="text-gray-400 mb-6">Second-year Computer Science student at the University of Waterloo</p>
               <div className="space-y-4">
                 <div className="flex flex-row md:flex-col lg:flex-row items-center md:items-start lg:items-center">
                   <span className="text-gray-500 w-24 md:w-auto lg:w-24 font-medium md:mb-1 lg:mb-0">Location:</span>
@@ -68,13 +68,8 @@ export default function AboutPage() {
               <h2 className="text-2xl font-bold mb-4">About Me</h2>
               <div className="prose prose-invert max-w-none">
                 <p>
-                  Hello! I'm Daniel, a first-year Computer Science student at the University of Waterloo. I'm passionate
+                  Hello! I'm Daniel, a second-year Computer Science student at the University of Waterloo. I'm passionate
                   about technology, problem-solving, and creating meaningful digital experiences.
-                </p>
-                <p>
-                  My journey in computer science began when I was in high school, where I first discovered my love for
-                  coding through creating simple games and websites. This passion led me to pursue a degree in Computer
-                  Science at the University of Waterloo, where I'm currently expanding my knowledge and skills.
                 </p>
                 <p>
                   I'm particularly interested in web development, artificial intelligence, and software engineering. I
@@ -90,7 +85,7 @@ export default function AboutPage() {
 
             <section>
               <h2 className="text-2xl font-bold mb-4">Experience</h2>
-              <div className="border-l-2 border-gray-800 pl-14 space-y-6">
+              <div className="border-l-2 border-gray-800 pl-8 ml-5 space-y-6">
                 <div>
                   <div className="flex items-start">
                     <div className="relative w-16 h-16 rounded-full overflow-hidden bg-gray-800 flex-shrink-0 mr-6 -ml-16">
@@ -101,7 +96,7 @@ export default function AboutPage() {
                       <p className="text-gray-400">Autonomy Software Developer</p>
                       <p className="text-gray-500">May. 2025 - Present</p>
                       <ul className="list-disc list-inside text-gray-400 mt-2">
-                        <li>First-year Computer Science student</li>
+                        <li>Second-year Computer Science student</li>
                         <li>Relevant coursework: Data Structures and Algorithms, Object-Oriented Programming</li>
                         <li>Member of the Computer Science Club</li>
                       </ul>

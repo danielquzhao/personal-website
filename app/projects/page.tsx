@@ -64,11 +64,6 @@ export default function ProjectsPage() {
 
         <h1 className="text-4xl font-bold mb-8">Projects</h1>
 
-        <p className="text-gray-400 mb-12 max-w-2xl">
-          Here are some of the projects I've worked on. These range from web applications to small utilities and games.
-          Each project has helped me learn and grow as a developer.
-        </p>
-
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project) => (
             <div
