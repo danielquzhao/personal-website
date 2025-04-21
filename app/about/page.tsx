@@ -20,37 +20,43 @@ export default function AboutPage() {
               </div>
               <h1 className="text-3xl font-bold mb-4">Daniel Zhao</h1>
               <p className="text-gray-400 mb-6">First-year Computer Science student at the University of Waterloo</p>
-              <div className="space-y-2">
-                <div className="flex items-center">
-                  <span className="text-gray-500 w-24">Location:</span>
+              <div className="space-y-4">
+                <div className="flex flex-row md:flex-col lg:flex-row items-center md:items-start lg:items-center">
+                  <span className="text-gray-500 w-24 md:w-auto lg:w-24 font-medium md:mb-1 lg:mb-0">Location:</span>
                   <span>Waterloo, ON</span>
                 </div>
-                <div className="flex items-center">
-                  <span className="text-gray-500 w-24">Email:</span>
-                  <a href="mailto:daniel.zhao@example.com" className="hover:underline">
-                    daniel.zhao@example.com
+                
+                <div className="flex flex-row md:flex-col lg:flex-row items-start md:items-start lg:items-start">
+                  <span className="text-gray-500 w-24 md:w-auto lg:w-24 font-medium md:mb-1 lg:mb-0">Email:</span>
+                  <a 
+                    href="mailto:danielquzhao@gmail.com" 
+                    className="hover:underline break-words"
+                  >
+                    danielquzhao@gmail.com
                   </a>
                 </div>
-                <div className="flex items-center">
-                  <span className="text-gray-500 w-24">GitHub:</span>
+                
+                <div className="flex flex-row md:flex-col lg:flex-row items-center md:items-start lg:items-center">
+                  <span className="text-gray-500 w-24 md:w-auto lg:w-24 font-medium md:mb-1 lg:mb-0">GitHub:</span>
                   <a
-                    href="https://github.com/danielzhao"
+                    href="https://github.com/danielquzhao"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:underline"
+                    className="hover:underline break-words"
                   >
-                    @danielzhao
+                    github.com/danielquzhao
                   </a>
                 </div>
-                <div className="flex items-center">
-                  <span className="text-gray-500 w-24">LinkedIn:</span>
+                
+                <div className="flex flex-row md:flex-col lg:flex-row items-center md:items-start lg:items-center">
+                  <span className="text-gray-500 w-24 md:w-auto lg:w-24 font-medium md:mb-1 lg:mb-0">LinkedIn:</span>
                   <a
-                    href="https://linkedin.com/in/danielzhao"
+                    href="https://linkedin.com/in/danielquzhao"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:underline"
+                    className="hover:underline break-words"
                   >
-                    @danielzhao
+                    linkedin.com/in/danielquzhao
                   </a>
                 </div>
               </div>
