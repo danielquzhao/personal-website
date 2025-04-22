@@ -4,45 +4,14 @@ import Image from "next/image"
 import Link from "next/link"
 import { Github, Linkedin, Mail, ArrowRight, Download, ArrowUp, ExternalLink } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import Navbar from "@/components/Navbar"
 
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
-      <header className="container mx-auto flex items-center justify-between py-6">
-        <Link href="/" className="text-xl font-semibold">
-          Daniel Zhao
-        </Link>
-        <nav className="flex items-center gap-6">
-          <Link href="/about" className="text-sm text-gray-400 hover:text-white transition-colors">
-            About
-          </Link>
-          <Link href="/projects" className="text-sm text-gray-400 hover:text-white transition-colors">
-            Projects
-          </Link>
-          <Link href="/photos" className="text-sm text-gray-400 hover:text-white transition-colors">
-            Photos
-          </Link>
-          <Button variant="ghost" size="icon" className="rounded-full">
-            <span className="sr-only">Toggle theme</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="lucide lucide-moon"
-            >
-              <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
-            </svg>
-          </Button>
-        </nav>
-      </header>
+      <Navbar />
 
-      <main className="container mx-auto flex-1 py-12">
+      <main className="container mx-auto flex-1 py-6">
         <section className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20">
           <div className="space-y-6 order-2 md:order-1">
             <h1 className="text-4xl font-bold tracking-tight lg:text-5xl">Hi there, I&apos;m Daniel! 👋</h1>

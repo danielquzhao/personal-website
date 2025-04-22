@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { ArrowLeft } from "lucide-react"
+import Navbar from "@/components/Navbar"
 
 export default function PhotosPage() {
   const photos = [
@@ -56,13 +56,8 @@ export default function PhotosPage() {
 
   return (
     <div className="min-h-screen bg-black text-white">
-      <div className="container mx-auto px-4 py-12">
-        <div className="mb-8">
-          <Link href="/" className="inline-flex items-center text-gray-400 hover:text-white">
-            <ArrowLeft className="mr-2 h-4 w-4" /> Back to home
-          </Link>
-        </div>
-
+      <Navbar />
+      <div className="container mx-auto px-4 py-6">
         <h1 className="text-4xl font-bold mb-8">Photos</h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
