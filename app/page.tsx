@@ -14,9 +14,9 @@ export default function Home() {
       <main className="container mx-auto flex-1 py-6">
         <section className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20">
           <div className="space-y-6 order-2 md:order-1">
-            <h1 className="text-4xl font-bold tracking-tight lg:text-5xl">Hi there, I'm Daniel Zhao!</h1>
+            <h1 className="text-4xl font-bold tracking-tight lg:text-5xl">Hi, I'm Daniel Zhao!</h1>
             <p className="text-xl text-gray-400">
-              I&apos;m a second year Computer Science student at the{" "}
+              I'm a second year Computer Science student at the{" "}
               <Link href="https://cs.uwaterloo.ca" className="text-white hover:underline" target="_blank" rel="noopener noreferrer">
                 University of Waterloo
               </Link>

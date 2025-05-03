@@ -7,7 +7,7 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen bg-black text-white">
       <Navbar />
-      <div className="container mx-auto px-4 py-6">
+      <div className="container mx-auto py-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div className="md:col-span-1">
             <div className="sticky top-12">
@@ -64,11 +64,7 @@ export default function AboutPage() {
               <h2 className="text-2xl font-bold mb-4">About Me</h2>
               <div className="prose prose-invert max-w-none">
                 <p>
-                  Hello! I'm Daniel, a second-year Computer Science student at the University of Waterloo. I'm passionate
-                  about technology, problem-solving, and creating meaningful digital experiences.
-                </p>
-                <p>
-                  When I'm not coding, you can find me running, playing piano, or exploring new places. I believe in the power of continuous learning and am always looking for new challenges and
+                I'm passionate about technology, problem-solving, and creating meaningful digital experiences. When I'm not coding, you can find me running, playing piano, or exploring new places. I believe in the power of continuous learning and am always looking for new challenges and
                   opportunities to grow.
                 </p>
               </div>
