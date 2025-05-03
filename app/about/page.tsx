@@ -6,7 +6,7 @@ import Footer from "@/components/Footer"
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-background text-foreground">
       <Navbar />
       <div className="container mx-auto py-6">
         <div className="flex flex-col">
@@ -18,12 +18,12 @@ export default function AboutPage() {
             
             <div className="grid grid-cols-2 gap-x-12 gap-y-4 max-w-xl">
               <div className="flex flex-col">
-                <span className="text-gray-500 font-medium mb-1">Location:</span>
+                <span className="text-muted-foreground font-medium mb-1">Location:</span>
                 <span>Waterloo, ON</span>
               </div>
 
               <div className="flex flex-col">
-                <span className="text-gray-500 font-medium mb-1">Email:</span>
+                <span className="text-muted-foreground font-medium mb-1">Email:</span>
                 <a
                   href="mailto:danielquzhao@gmail.com"
                   className="hover:underline break-words"
@@ -33,7 +33,7 @@ export default function AboutPage() {
               </div>
 
               <div className="flex flex-col">
-                <span className="text-gray-500 font-medium mb-1">GitHub:</span>
+                <span className="text-muted-foreground font-medium mb-1">GitHub:</span>
                 <a
                   href="https://github.com/danielquzhao"
                   target="_blank"
@@ -45,7 +45,7 @@ export default function AboutPage() {
               </div>
 
               <div className="flex flex-col">
-                <span className="text-gray-500 font-medium mb-1">LinkedIn:</span>
+                <span className="text-muted-foreground font-medium mb-1">LinkedIn:</span>
                 <a
                   href="https://linkedin.com/in/danielquzhao"
                   target="_blank"
@@ -62,7 +62,7 @@ export default function AboutPage() {
           <div className="space-y-12">
             <section>
               <h2 className="text-2xl font-bold mb-4">About Me</h2>
-              <div className="prose prose-invert max-w-none">
+              <div className="prose prose-invert dark:prose-invert max-w-none">
                 <p>
                   I'm passionate about technology, problem-solving, and creating meaningful digital experiences. When I'm not coding, you can find me running, playing piano, or exploring new places. I believe in the power of continuous learning and am always looking for new challenges and opportunities to grow.
                 </p>
@@ -71,81 +71,81 @@ export default function AboutPage() {
 
             <section>
               <h2 className="text-2xl font-bold mb-4">Experience</h2>
-              <div className="border-l-2 border-gray-800 pl-8 ml-8 space-y-6">
+              <div className="border-l-2 border-border pl-8 ml-8 space-y-6">
                 <div>
                   <div className="flex items-start">
-                    <div className="relative w-16 h-16 rounded-full overflow-hidden bg-gray-800 flex-shrink-0 mr-6 -ml-16">
+                    <div className="relative w-16 h-16 rounded-full overflow-hidden bg-secondary flex-shrink-0 mr-6 -ml-16">
                       <Image src="/warg-logo.png" alt="WARG" fill className="object-cover" />
                     </div>
                     <div className="pt-1">
                       <h3 className="text-xl font-semibold">Waterloo Aerial Robotics Group</h3>
-                      <p className="text-gray-400">Autonomy Software Developer</p>
-                      <p className="text-gray-500">May. 2025 - Present</p>
+                      <p className="text-muted-foreground">Autonomy Software Developer</p>
+                      <p className="text-muted-foreground">May. 2025 - Present</p>
                     </div>
                   </div>
                 </div>
 
                 <div>
                   <div className="flex items-start">
-                    <div className="relative w-16 h-16 rounded-full overflow-hidden bg-gray-800 flex-shrink-0 mr-6 -ml-16">
+                    <div className="relative w-16 h-16 rounded-full overflow-hidden bg-secondary flex-shrink-0 mr-6 -ml-16">
                       <Image src="/acupuncture-logo.png" alt="Classic Acupuncture" fill className="object-cover" />
                     </div>
                     <div className="pt-1">
                       <h3 className="text-xl font-semibold">Classic Acupuncture Inc</h3>
-                      <p className="text-gray-400">Web Developer</p>
-                      <p className="text-gray-500">Jan. 2025 - Apr. 2025</p>
+                      <p className="text-muted-foreground">Web Developer</p>
+                      <p className="text-muted-foreground">Jan. 2025 - Apr. 2025</p>
                     </div>
                   </div>
                 </div>
 
                 <div>
                   <div className="flex items-start">
-                    <div className="relative w-16 h-16 rounded-full overflow-hidden bg-gray-800 flex-shrink-0 mr-6 -ml-16">
+                    <div className="relative w-16 h-16 rounded-full overflow-hidden bg-secondary flex-shrink-0 mr-6 -ml-16">
                       <Image src="/wrl-logo.png" alt="Waterloo Reality Labs" fill className="object-cover" />
                     </div>
                     <div className="pt-1">
                       <h3 className="text-xl font-semibold">Waterloo Reality Labs</h3>
-                      <p className="text-gray-400">Software Developer</p>
-                      <p className="text-gray-500">Sep. 2024 - Apr. 2025</p>
+                      <p className="text-muted-foreground">Software Developer</p>
+                      <p className="text-muted-foreground">Sep. 2024 - Apr. 2025</p>
                     </div>
                   </div>
                 </div>
 
                 <div>
                   <div className="flex items-start">
-                    <div className="relative w-16 h-16 rounded-full overflow-hidden bg-gray-800 flex-shrink-0 mr-6 -ml-16">
+                    <div className="relative w-16 h-16 rounded-full overflow-hidden bg-secondary flex-shrink-0 mr-6 -ml-16">
                       <Image src="/music-logo.png" alt="Royal Music Academy" fill className="object-cover" />
                     </div>
                     <div className="pt-1">
                       <h3 className="text-xl font-semibold">Royal Music Academy</h3>
-                      <p className="text-gray-400">Piano Teacher</p>
-                      <p className="text-gray-500">Sep. 2023 - May. 2024</p>
+                      <p className="text-muted-foreground">Piano Teacher</p>
+                      <p className="text-muted-foreground">Sep. 2023 - May. 2024</p>
                     </div>
                   </div>
                 </div>
 
                 <div>
                   <div className="flex items-start">
-                    <div className="relative w-16 h-16 rounded-full overflow-hidden bg-gray-800 flex-shrink-0 mr-6 -ml-16">
+                    <div className="relative w-16 h-16 rounded-full overflow-hidden bg-secondary flex-shrink-0 mr-6 -ml-16">
                       <Image src="/taekwondo-logo.png" alt="Hong Park Taekwondo" fill className="object-cover" />
                     </div>
                     <div className="pt-1">
                       <h3 className="text-xl font-semibold">Hong Park Taekwondo</h3>
-                      <p className="text-gray-400">Taekwondo Instructor</p>
-                      <p className="text-gray-500">Sep. 2021 - Jun. 2022</p>
+                      <p className="text-muted-foreground">Taekwondo Instructor</p>
+                      <p className="text-muted-foreground">Sep. 2021 - Jun. 2022</p>
                     </div>
                   </div>
                 </div>
 
                 <div>
                   <div className="flex items-start">
-                    <div className="relative w-16 h-16 rounded-full overflow-hidden bg-gray-800 flex-shrink-0 mr-6 -ml-16">
+                    <div className="relative w-16 h-16 rounded-full overflow-hidden bg-secondary flex-shrink-0 mr-6 -ml-16">
                       <Image src="/subway-logo.png" alt="Subway" fill className="object-cover" />
                     </div>
                     <div className="pt-1">
                       <h3 className="text-xl font-semibold">Subway</h3>
-                      <p className="text-gray-400">Sandwich Engineer</p>
-                      <p className="text-gray-500">Jul. 2021 - Aug. 2021</p>
+                      <p className="text-muted-foreground">Sandwich Engineer</p>
+                      <p className="text-muted-foreground">Jul. 2021 - Aug. 2021</p>
                     </div>
                   </div>
                 </div>
@@ -155,53 +155,53 @@ export default function AboutPage() {
             <section>
               <h2 className="text-2xl font-bold mb-4">Skills</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div className="border border-gray-800 rounded-lg p-4">
+                <div className="border border-border rounded-lg p-4">
                   <h3 className="text-lg font-semibold mb-2">Programming Languages</h3>
                   <div className="flex flex-wrap gap-2">
-                    <span className="bg-gray-800 px-2 py-1 rounded text-sm">C</span>
-                    <span className="bg-gray-800 px-2 py-1 rounded text-sm">C++</span>
-                    <span className="bg-gray-800 px-2 py-1 rounded text-sm">C#</span>
-                    <span className="bg-gray-800 px-2 py-1 rounded text-sm">Python</span>
-                    <span className="bg-gray-800 px-2 py-1 rounded text-sm">HTML</span>
-                    <span className="bg-gray-800 px-2 py-1 rounded text-sm">CSS</span>
-                    <span className="bg-gray-800 px-2 py-1 rounded text-sm">JavaScript</span>
-                    <span className="bg-gray-800 px-2 py-1 rounded text-sm">TypeScript</span>
+                    <span className="bg-secondary px-2 py-1 rounded text-sm">C</span>
+                    <span className="bg-secondary px-2 py-1 rounded text-sm">C++</span>
+                    <span className="bg-secondary px-2 py-1 rounded text-sm">C#</span>
+                    <span className="bg-secondary px-2 py-1 rounded text-sm">Python</span>
+                    <span className="bg-secondary px-2 py-1 rounded text-sm">HTML</span>
+                    <span className="bg-secondary px-2 py-1 rounded text-sm">CSS</span>
+                    <span className="bg-secondary px-2 py-1 rounded text-sm">JavaScript</span>
+                    <span className="bg-secondary px-2 py-1 rounded text-sm">TypeScript</span>
                   </div>
                 </div>
-                <div className="border border-gray-800 rounded-lg p-4">
+                <div className="border border-border rounded-lg p-4">
                   <h3 className="text-lg font-semibold mb-2">Frameworks & Libraries</h3>
                   <div className="flex flex-wrap gap-2">
-                    <span className="bg-gray-800 px-2 py-1 rounded text-sm">React</span>
-                    <span className="bg-gray-800 px-2 py-1 rounded text-sm">Next.js</span>
-                    <span className="bg-gray-800 px-2 py-1 rounded text-sm">Express.js</span>
-                    <span className="bg-gray-800 px-2 py-1 rounded text-sm">Node.js</span>
-                    <span className="bg-gray-800 px-2 py-1 rounded text-sm">Flask</span>
-                    <span className="bg-gray-800 px-2 py-1 rounded text-sm">Tailwind CSS</span>
+                    <span className="bg-secondary px-2 py-1 rounded text-sm">React</span>
+                    <span className="bg-secondary px-2 py-1 rounded text-sm">Next.js</span>
+                    <span className="bg-secondary px-2 py-1 rounded text-sm">Express.js</span>
+                    <span className="bg-secondary px-2 py-1 rounded text-sm">Node.js</span>
+                    <span className="bg-secondary px-2 py-1 rounded text-sm">Flask</span>
+                    <span className="bg-secondary px-2 py-1 rounded text-sm">Tailwind CSS</span>
                   </div>
                 </div>
-                <div className="border border-gray-800 rounded-lg p-4">
+                <div className="border border-border rounded-lg p-4">
                   <h3 className="text-lg font-semibold mb-2">Tools & Technologies</h3>
                   <div className="flex flex-wrap gap-2">
-                    <span className="bg-gray-800 px-2 py-1 rounded text-sm">Git</span>
-                    <span className="bg-gray-800 px-2 py-1 rounded text-sm">Bash</span>
-                    <span className="bg-gray-800 px-2 py-1 rounded text-sm">Linux</span>
-                    <span className="bg-gray-800 px-2 py-1 rounded text-sm">Docker</span>
-                    <span className="bg-gray-800 px-2 py-1 rounded text-sm">Figma</span>
-                    <span className="bg-gray-800 px-2 py-1 rounded text-sm">MongoDB</span>
-                    <span className="bg-gray-800 px-2 py-1 rounded text-sm">PostgreSQL</span>
-                    <span className="bg-gray-800 px-2 py-1 rounded text-sm">Firebase</span>
-                    <span className="bg-gray-800 px-2 py-1 rounded text-sm">AWS</span>
-                    <span className="bg-gray-800 px-2 py-1 rounded text-sm">Vercel</span>
+                    <span className="bg-secondary px-2 py-1 rounded text-sm">Git</span>
+                    <span className="bg-secondary px-2 py-1 rounded text-sm">Bash</span>
+                    <span className="bg-secondary px-2 py-1 rounded text-sm">Linux</span>
+                    <span className="bg-secondary px-2 py-1 rounded text-sm">Docker</span>
+                    <span className="bg-secondary px-2 py-1 rounded text-sm">Figma</span>
+                    <span className="bg-secondary px-2 py-1 rounded text-sm">MongoDB</span>
+                    <span className="bg-secondary px-2 py-1 rounded text-sm">PostgreSQL</span>
+                    <span className="bg-secondary px-2 py-1 rounded text-sm">Firebase</span>
+                    <span className="bg-secondary px-2 py-1 rounded text-sm">AWS</span>
+                    <span className="bg-secondary px-2 py-1 rounded text-sm">Vercel</span>
                   </div>
                 </div>
-                <div className="border border-gray-800 rounded-lg p-4">
+                <div className="border border-border rounded-lg p-4">
                   <h3 className="text-lg font-semibold mb-2">Soft Skills</h3>
                   <div className="flex flex-wrap gap-2">
-                    <span className="bg-gray-800 px-2 py-1 rounded text-sm">Problem Solving</span>
-                    <span className="bg-gray-800 px-2 py-1 rounded text-sm">Teamwork</span>
-                    <span className="bg-gray-800 px-2 py-1 rounded text-sm">Communication</span>
-                    <span className="bg-gray-800 px-2 py-1 rounded text-sm">Time Management</span>
-                    <span className="bg-gray-800 px-2 py-1 rounded text-sm">Adaptability</span>
+                    <span className="bg-secondary px-2 py-1 rounded text-sm">Problem Solving</span>
+                    <span className="bg-secondary px-2 py-1 rounded text-sm">Teamwork</span>
+                    <span className="bg-secondary px-2 py-1 rounded text-sm">Communication</span>
+                    <span className="bg-secondary px-2 py-1 rounded text-sm">Time Management</span>
+                    <span className="bg-secondary px-2 py-1 rounded text-sm">Adaptability</span>
                   </div>
                 </div>
               </div>

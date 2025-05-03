@@ -56,7 +56,7 @@ export default function PhotosPage() {
   ]
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-background text-foreground">
       <Navbar />
       <div className="container mx-auto py-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -69,8 +69,8 @@ export default function PhotosPage() {
                   fill
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-black bg-opacity-30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                  <h3 className="text-white font-medium">{photo.title}</h3>
+                <div className="absolute inset-0 bg-background/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                  <h3 className="text-foreground font-medium">{photo.title}</h3>
                 </div>
               </div>
             </div>

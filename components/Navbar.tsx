@@ -1,43 +1,42 @@
 "use client"
 
 import Link from "next/link"
-import { Github, Linkedin, Mail } from "lucide-react"
+import { useTheme } from "next-themes"
 import { Button } from "@/components/ui/button"
+import { Moon, Sun } from "lucide-react"
 
 export default function Navbar() {
+  const { theme, setTheme } = useTheme()
+  
   return (
     <header className="container mx-auto flex items-center justify-between py-12">
       <nav className="flex items-center gap-8">
-        <Link href="/" className="text-lg text-gray-400 hover:text-white transition-colors">
+        <Link href="/" className="text-lg text-muted-foreground hover:text-foreground transition-colors">
           DZ
         </Link>
-        <Link href="/about" className="text-lg text-gray-400 hover:text-white transition-colors">
+        <Link href="/about" className="text-lg text-muted-foreground hover:text-foreground transition-colors">
           About
         </Link>
-        <Link href="/projects" className="text-lg text-gray-400 hover:text-white transition-colors">
+        <Link href="/projects" className="text-lg text-muted-foreground hover:text-foreground transition-colors">
           Projects
         </Link>
-        <Link href="/photos" className="text-lg text-gray-400 hover:text-white transition-colors">
+        <Link href="/photos" className="text-lg text-muted-foreground hover:text-foreground transition-colors">
           Photos
         </Link>
       </nav>
       <div>
-      <Button variant="ghost" size="icon" className="rounded-full">
+        <Button 
+          variant="ghost" 
+          size="icon" 
+          className="rounded-full"
+          onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+        >
           <span className="sr-only">Toggle theme</span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="lucide lucide-moon"
-          >
-            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
-          </svg>
+          {theme === 'dark' ? (
+            <Sun className="h-5 w-5" />
+          ) : (
+            <Moon className="h-5 w-5" />
+          )}
         </Button>
       </div>
     </header>

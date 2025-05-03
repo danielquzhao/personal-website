@@ -9,16 +9,16 @@ import Footer from "@/components/Footer"
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-background text-foreground">
       <Navbar />
       
       <main className="container mx-auto">
         <section className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center w-full">
           <div className="space-y-6 order-2 md:order-1">
             <h1 className="text-3xl font-bold tracking-tight lg:text-3xl">Hi, I'm Daniel Zhao!</h1>
-            <p className="text-xl text-gray-400">
+            <p className="text-xl text-muted-foreground">
               I'm a second year Computer Science student at the{" "}
-              <Link href="https://cs.uwaterloo.ca" className="text-white hover:underline" target="_blank" rel="noopener noreferrer">
+              <Link href="https://cs.uwaterloo.ca" className="text-foreground hover:underline" target="_blank" rel="noopener noreferrer">
                 University of Waterloo
               </Link>
               .
@@ -32,7 +32,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex justify-center order-1 md:order-2">
-            <div className="relative w-52 h-52 md:w-52 md:h-52 rounded-full overflow-hidden border-4 border-white/10">
+            <div className="relative w-52 h-52 md:w-52 md:h-52 rounded-full overflow-hidden border-4 border-border/10">
               <Image
                 src="/pfp.png"
                 alt="Daniel Zhao"

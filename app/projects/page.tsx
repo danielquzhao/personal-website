@@ -56,21 +56,21 @@ export default function ProjectsPage() {
   ]
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-background text-foreground">
       <Navbar />
       <div className="container mx-auto py-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
           {projects.map((project) => (
             <div
               key={project.id}
-              className="border border-gray-800 rounded-lg p-6 hover:border-gray-700 transition-colors"
+              className="border border-border rounded-lg p-6 hover:border-muted transition-colors"
             >
               <h2 className="text-xl font-semibold mb-2">{project.title}</h2>
-              <p className="text-gray-400 mb-4">{project.description}</p>
+              <p className="text-muted-foreground mb-4">{project.description}</p>
 
               <div className="flex flex-wrap gap-2 mb-6">
                 {project.tags.map((tag) => (
-                  <span key={tag} className="text-xs bg-gray-800 px-2 py-1 rounded">
+                  <span key={tag} className="text-xs bg-secondary px-2 py-1 rounded">
                     {tag}
                   </span>
                 ))}
@@ -81,7 +81,7 @@ export default function ProjectsPage() {
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-gray-400 hover:text-white inline-flex items-center"
+                  className="text-sm text-muted-foreground hover:text-foreground inline-flex items-center"
                 >
                   <Github className="mr-1 h-4 w-4" /> Code
                 </Link>
@@ -89,7 +89,7 @@ export default function ProjectsPage() {
                   href={project.demo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-gray-400 hover:text-white inline-flex items-center"
+                  className="text-sm text-muted-foreground hover:text-foreground inline-flex items-center"
                 >
                   <ExternalLink className="mr-1 h-4 w-4" /> Demo
                 </Link>
