@@ -12,7 +12,7 @@ export default function AboutPage() {
           <div className="md:col-span-1">
             <div className="sticky top-12">
               <div className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-full md:h-auto md:aspect-square rounded-lg overflow-hidden mb-6">
-                <Image src="/placeholder.svg?height=400&width=400" alt="Daniel Zhao" fill className="object-cover" />
+                <Image src="/scene.png" alt="Daniel Zhao" fill className="object-cover" />
               </div>
               <h1 className="text-3xl font-bold mb-4">Daniel Zhao</h1>
               <p className="text-gray-400 mb-6">Second-year Computer Science student at the University of Waterloo</p>
@@ -66,11 +66,6 @@ export default function AboutPage() {
                 <p>
                   Hello! I'm Daniel, a second-year Computer Science student at the University of Waterloo. I'm passionate
                   about technology, problem-solving, and creating meaningful digital experiences.
-                </p>
-                <p>
-                  I'm particularly interested in web development, artificial intelligence, and software engineering. I
-                  enjoy the process of turning ideas into reality through code and am constantly learning new
-                  technologies and frameworks to enhance my abilities.
                 </p>
                 <p>
                   When I'm not coding, you can find me running, playing piano, or exploring new places. I believe in the power of continuous learning and am always looking for new challenges and
