@@ -9,7 +9,7 @@ export default function Navbar() {
     <header className="container mx-auto flex items-center justify-between py-12">
       <nav className="flex items-center gap-8">
         <Link href="/" className="text-lg text-gray-400 hover:text-white transition-colors">
-          Home
+          DZ
         </Link>
         <Link href="/about" className="text-lg text-gray-400 hover:text-white transition-colors">
           About

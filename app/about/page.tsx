@@ -9,71 +9,69 @@ export default function AboutPage() {
     <div className="min-h-screen bg-black text-white">
       <Navbar />
       <div className="container mx-auto py-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-          <div className="md:col-span-1">
-            <div className="sticky top-12">
-              <div className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-full md:h-auto md:aspect-square rounded-lg overflow-hidden mb-6">
-                <Image src="/scene.png" alt="Daniel Zhao" fill className="object-cover" />
+        <div className="flex flex-col">
+          <div className="mb-12 flex flex-col items-start">
+            <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-lg overflow-hidden mb-10">
+              <Image src="/scene.png" alt="Daniel Zhao" fill className="object-cover" />
+            </div>
+            <h1 className="text-3xl font-bold mb-4">Daniel Zhao</h1>
+            
+            <div className="grid grid-cols-2 gap-x-12 gap-y-4 max-w-xl">
+              <div className="flex flex-col">
+                <span className="text-gray-500 font-medium mb-1">Location:</span>
+                <span>Waterloo, ON</span>
               </div>
-              <h1 className="text-3xl font-bold mb-4">Daniel Zhao</h1>
-              <p className="text-gray-400 mb-6">Second-year Computer Science student at the University of Waterloo</p>
-              <div className="space-y-4">
-                <div className="flex flex-row md:flex-col lg:flex-row items-center md:items-start lg:items-center">
-                  <span className="text-gray-500 w-24 md:w-auto lg:w-24 font-medium md:mb-1 lg:mb-0">Location:</span>
-                  <span>Waterloo, ON</span>
-                </div>
 
-                <div className="flex flex-row md:flex-col lg:flex-row items-start md:items-start lg:items-start">
-                  <span className="text-gray-500 w-24 md:w-auto lg:w-24 font-medium md:mb-1 lg:mb-0">Email:</span>
-                  <a
-                    href="mailto:danielquzhao@gmail.com"
-                    className="hover:underline break-words"
-                  >
-                    danielquzhao@gmail.com
-                  </a>
-                </div>
+              <div className="flex flex-col">
+                <span className="text-gray-500 font-medium mb-1">Email:</span>
+                <a
+                  href="mailto:danielquzhao@gmail.com"
+                  className="hover:underline break-words"
+                >
+                  danielquzhao@gmail.com
+                </a>
+              </div>
 
-                <div className="flex flex-row md:flex-col lg:flex-row items-center md:items-start lg:items-center">
-                  <span className="text-gray-500 w-24 md:w-auto lg:w-24 font-medium md:mb-1 lg:mb-0">GitHub:</span>
-                  <a
-                    href="https://github.com/danielquzhao"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:underline break-words"
-                  >
-                    github.com/danielquzhao
-                  </a>
-                </div>
+              <div className="flex flex-col">
+                <span className="text-gray-500 font-medium mb-1">GitHub:</span>
+                <a
+                  href="https://github.com/danielquzhao"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline break-words"
+                >
+                  github.com/danielquzhao
+                </a>
+              </div>
 
-                <div className="flex flex-row md:flex-col lg:flex-row items-center md:items-start lg:items-center">
-                  <span className="text-gray-500 w-24 md:w-auto lg:w-24 font-medium md:mb-1 lg:mb-0">LinkedIn:</span>
-                  <a
-                    href="https://linkedin.com/in/danielquzhao"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:underline break-words"
-                  >
-                    linkedin.com/in/danielquzhao
-                  </a>
-                </div>
+              <div className="flex flex-col">
+                <span className="text-gray-500 font-medium mb-1">LinkedIn:</span>
+                <a
+                  href="https://linkedin.com/in/danielquzhao"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline break-words"
+                >
+                  linkedin.com/in/danielquzhao
+                </a>
               </div>
             </div>
           </div>
 
-          <div className="md:col-span-2 space-y-12">
+          {/* Content sections */}
+          <div className="space-y-12">
             <section>
               <h2 className="text-2xl font-bold mb-4">About Me</h2>
               <div className="prose prose-invert max-w-none">
                 <p>
-                I'm passionate about technology, problem-solving, and creating meaningful digital experiences. When I'm not coding, you can find me running, playing piano, or exploring new places. I believe in the power of continuous learning and am always looking for new challenges and
-                  opportunities to grow.
+                  I'm passionate about technology, problem-solving, and creating meaningful digital experiences. When I'm not coding, you can find me running, playing piano, or exploring new places. I believe in the power of continuous learning and am always looking for new challenges and opportunities to grow.
                 </p>
               </div>
             </section>
 
             <section>
               <h2 className="text-2xl font-bold mb-4">Experience</h2>
-              <div className="border-l-2 border-gray-800 pl-8 ml-5 space-y-6">
+              <div className="border-l-2 border-gray-800 pl-8 ml-8 space-y-6">
                 <div>
                   <div className="flex items-start">
                     <div className="relative w-16 h-16 rounded-full overflow-hidden bg-gray-800 flex-shrink-0 mr-6 -ml-16">
@@ -83,29 +81,6 @@ export default function AboutPage() {
                       <h3 className="text-xl font-semibold">Waterloo Aerial Robotics Group</h3>
                       <p className="text-gray-400">Autonomy Software Developer</p>
                       <p className="text-gray-500">May. 2025 - Present</p>
-                      <ul className="list-disc list-inside text-gray-400 mt-2">
-                        <li>Second-year Computer Science student</li>
-                        <li>Relevant coursework: Data Structures and Algorithms, Object-Oriented Programming</li>
-                        <li>Member of the Computer Science Club</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-                <div>
-                  <div className="flex items-start">
-                    <div className="relative w-16 h-16 rounded-full overflow-hidden bg-gray-800 flex-shrink-0 mr-6 -ml-16">
-                      <Image src="/electrium-logo.png" alt="Electrium" fill className="object-cover" />
-                    </div>
-                    <div className="pt-1">
-                      <h3 className="text-xl font-semibold">Electrium Mobility</h3>
-                      <p className="text-gray-400">Web Developer</p>
-                      <p className="text-gray-500">Apr. 2025 - Present</p>
-                      <ul className="list-disc list-inside text-gray-400 mt-2">
-                        <li>Graduated with honors</li>
-                        <li>President of the Coding Club</li>
-                        <li>Participated in various programming competitions</li>
-                      </ul>
                     </div>
                   </div>
                 </div>
@@ -119,11 +94,6 @@ export default function AboutPage() {
                       <h3 className="text-xl font-semibold">Classic Acupuncture Inc</h3>
                       <p className="text-gray-400">Web Developer</p>
                       <p className="text-gray-500">Jan. 2025 - Apr. 2025</p>
-                      <ul className="list-disc list-inside text-gray-400 mt-2">
-                        <li>Graduated with honors</li>
-                        <li>President of the Coding Club</li>
-                        <li>Participated in various programming competitions</li>
-                      </ul>
                     </div>
                   </div>
                 </div>
@@ -137,11 +107,6 @@ export default function AboutPage() {
                       <h3 className="text-xl font-semibold">Waterloo Reality Labs</h3>
                       <p className="text-gray-400">Software Developer</p>
                       <p className="text-gray-500">Sep. 2024 - Apr. 2025</p>
-                      <ul className="list-disc list-inside text-gray-400 mt-2">
-                        <li>Graduated with honors</li>
-                        <li>President of the Coding Club</li>
-                        <li>Participated in various programming competitions</li>
-                      </ul>
                     </div>
                   </div>
                 </div>
@@ -155,11 +120,6 @@ export default function AboutPage() {
                       <h3 className="text-xl font-semibold">Royal Music Academy</h3>
                       <p className="text-gray-400">Piano Teacher</p>
                       <p className="text-gray-500">Sep. 2023 - May. 2024</p>
-                      <ul className="list-disc list-inside text-gray-400 mt-2">
-                        <li>Graduated with honors</li>
-                        <li>President of the Coding Club</li>
-                        <li>Participated in various programming competitions</li>
-                      </ul>
                     </div>
                   </div>
                 </div>
@@ -173,11 +133,6 @@ export default function AboutPage() {
                       <h3 className="text-xl font-semibold">Hong Park Taekwondo</h3>
                       <p className="text-gray-400">Taekwondo Instructor</p>
                       <p className="text-gray-500">Sep. 2021 - Jun. 2022</p>
-                      <ul className="list-disc list-inside text-gray-400 mt-2">
-                        <li>Graduated with honors</li>
-                        <li>President of the Coding Club</li>
-                        <li>Participated in various programming competitions</li>
-                      </ul>
                     </div>
                   </div>
                 </div>
@@ -191,11 +146,6 @@ export default function AboutPage() {
                       <h3 className="text-xl font-semibold">Subway</h3>
                       <p className="text-gray-400">Sandwich Engineer</p>
                       <p className="text-gray-500">Jul. 2021 - Aug. 2021</p>
-                      <ul className="list-disc list-inside text-gray-400 mt-2">
-                        <li>Graduated with honors</li>
-                        <li>President of the Coding Club</li>
-                        <li>Participated in various programming competitions</li>
-                      </ul>
                     </div>
                   </div>
                 </div>
