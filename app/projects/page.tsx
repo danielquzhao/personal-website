@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { ArrowLeft, Github, ExternalLink } from "lucide-react"
 import Navbar from "@/components/Navbar"
+import Footer from "@/components/Footer"
 
 export default function ProjectsPage() {
   const projects = [
@@ -97,6 +98,7 @@ export default function ProjectsPage() {
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   )
 }

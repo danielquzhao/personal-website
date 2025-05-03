@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import Navbar from "@/components/Navbar"
+import Footer from "@/components/Footer"
 
 export default function PhotosPage() {
   const photos = [
@@ -76,6 +77,7 @@ export default function PhotosPage() {
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   )
 }
