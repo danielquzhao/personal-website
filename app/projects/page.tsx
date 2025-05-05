@@ -54,7 +54,6 @@ export default function ProjectsPage() {
               key={project.id}
               className="border border-border rounded-lg overflow-hidden hover:border-muted transition-colors"
             >
-              {/* Project Image */}
               <div className="relative w-full h-48 bg-secondary">
                 {project.image ? (
                   <Image
@@ -69,8 +68,7 @@ export default function ProjectsPage() {
                   </div>
                 )}
               </div>
-              
-              {/* Project Details */}
+            
               <div className="p-6">
                 <h2 className="text-xl font-semibold mb-2">{project.title}</h2>
                 <p className="text-muted-foreground mb-4">{project.description}</p>

@@ -58,7 +58,7 @@ export default function PhotosPage() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Navbar />
-      <div className="container mx-auto py-6">
+      {/* <div className="container mx-auto py-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {photos.map((photo) => (
             <div key={photo.id} className="group">
@@ -76,6 +76,9 @@ export default function PhotosPage() {
             </div>
           ))}
         </div>
+      </div> */}
+      <div className="container mx-auto flex justify-center items-center">
+        <p>under construction 🛠️</p>
       </div>
       <Footer />
     </div>
