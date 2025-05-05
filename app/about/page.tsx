@@ -63,7 +63,7 @@ export default function AboutPage() {
             <section>
               <h2 className="text-2xl font-bold mb-4">About Me</h2>
               <div className="prose prose-invert dark:prose-invert max-w-none">
-                <p>
+                <p className="text-muted-foreground">
                   I'm passionate about technology, problem-solving, and creating meaningful digital experiences. When I'm not coding, you can find me running, playing piano, or exploring new places. I believe in the power of continuous learning and am always looking for new challenges and opportunities to grow.
                 </p>
               </div>

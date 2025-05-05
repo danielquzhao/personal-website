@@ -7,8 +7,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Daniel Zhao | CS Student",
-  description: "Personal website of Daniel Zhao, Computer Science student at the University of Waterloo"
+  title: "Daniel Zhao",
 }
 
 export default function RootLayout({
