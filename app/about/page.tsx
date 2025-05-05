@@ -93,7 +93,7 @@ export default function AboutPage() {
                     <div className="pt-1">
                       <h3 className="text-xl font-semibold">Classic Acupuncture Inc</h3>
                       <p className="text-muted-foreground">Web Developer</p>
-                      <p className="text-muted-foreground">Jan. 2025 - Apr. 2025</p>
+                      <p className="text-muted-foreground">Mar. 2025 - Present</p>
                     </div>
                   </div>
                 </div>

@@ -9,16 +9,16 @@ export default function ProjectsPage() {
     {
       id: 1,
       title: "ChordCraft",
-      description: "My personal website built with Next.js, TypeScript, and Tailwind CSS. Built at GeeseHacks 2025.",
+      description: "A web app that lets users play an interactive piano to generate and save sheet music compositions. Built at GeeseHacks 2025.",
       tags: ["JavaScript", "React", "Firebase", "ABCJS"],
-      github: "https://github.com/danielzhao/personal-website",
+      github: "https://github.com/yivwon/geesehacks",
       demo: null,
       image: "/chordcraft.png",
     },
     {
       id: 2,
       title: "Terra",
-      description: "A simple task manager application to keep track of your daily tasks.",
+      description: "An AR mobile app that lets users place customizable 3D blocks in real-world environments using intuitive touch and raycasting controls. Built at UofTHacks 2025.",
       tags: ["C#", "Unity", "AR Foundation", "ARCore"],
       github: "https://github.com/MiniCube11/uofthacks",
       demo: null,
@@ -27,7 +27,7 @@ export default function ProjectsPage() {
     {
       id: 3,
       title: "TrashMap",
-      description: "A weather application that shows current weather and forecast for any location.",
+      description: "An AI-powered web app that uses computer vision to identify waste items and guide users to proper disposal sites. Built at DeltaHacks 2025.",
       tags: ["Python", "Streamlit", "Google Cloud Vision API", "OpenAI API"],
       github: "https://github.com/AlexanderAmpuero/DeltaHacks_2025",
       demo: null,
@@ -36,7 +36,7 @@ export default function ProjectsPage() {
     {
       id: 4,
       title: "Personal Website",
-      description: "My personal website built with Next.js, TypeScript, and Tailwind CSS.",
+      description: "My personal website built to showcase my skills and interests.",
       tags: ["Next.js", "TypeScript", "Tailwind CSS"],
       github: "https://github.com/danielquzhao/personal-website",
       demo: null,
