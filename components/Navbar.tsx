@@ -1,5 +1,6 @@
 "use client"
 
+import { useState, useEffect } from "react"
 import Link from "next/link"
 import { useTheme } from "next-themes"
 import { Button } from "@/components/ui/button"
@@ -7,6 +8,12 @@ import { Moon, Sun } from "lucide-react"
 
 export default function Navbar() {
   const { theme, setTheme } = useTheme()
+  const [mounted, setMounted] = useState(false)
+  
+  // Only show the theme toggle after component mounts to avoid hydration mismatch
+  useEffect(() => {
+    setMounted(true)
+  }, [])
   
   return (
     <header className="container mx-auto flex items-center justify-between py-12">
@@ -32,10 +39,15 @@ export default function Navbar() {
           onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
         >
           <span className="sr-only">Toggle theme</span>
-          {theme === 'dark' ? (
-            <Sun className="h-5 w-5" />
+          {mounted ? (
+            theme === 'dark' ? (
+              <Sun className="h-5 w-5" />
+            ) : (
+              <Moon className="h-5 w-5" />
+            )
           ) : (
-            <Moon className="h-5 w-5" />
+            // Render a placeholder during SSR to avoid hydration mismatch
+            <div className="h-5 w-5" />
           )}
         </Button>
       </div>
