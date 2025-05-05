@@ -72,18 +72,6 @@ export default function AboutPage() {
             <section>
               <h2 className="text-2xl font-bold mb-4">Experience</h2>
               <div className="border-l-2 border-border pl-8 ml-8 space-y-6">
-                <div>
-                  <div className="flex items-start">
-                    <div className="relative w-16 h-16 rounded-full overflow-hidden bg-secondary flex-shrink-0 mr-6 -ml-16">
-                      <Image src="/warg-logo.png" alt="WARG" fill className="object-cover" />
-                    </div>
-                    <div className="pt-1">
-                      <h3 className="text-xl font-semibold">Waterloo Aerial Robotics Group</h3>
-                      <p className="text-muted-foreground">Autonomy Software Developer</p>
-                      <p className="text-muted-foreground">May. 2025 - Present</p>
-                    </div>
-                  </div>
-                </div>
 
                 <div>
                   <div className="flex items-start">
