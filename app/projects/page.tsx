@@ -36,7 +36,7 @@ export default function ProjectsPage() {
     {
       id: 4,
       title: "Personal Website",
-      description: "My personal website built to showcase my skills and interests.",
+      description: "My personal website created to showcase my skills and interests.",
       tags: ["Next.js", "TypeScript", "Tailwind CSS"],
       github: "https://github.com/danielquzhao/personal-website",
       demo: null,

@@ -10,6 +10,17 @@ export default function Footer() {
             <div className="text-muted-foreground text-sm">
               Daniel Zhao © 2025
             </div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <a href='https://cs.uwatering.com/#https://www.danielquzhao.com/?nav=prev'>←</a>
+              <a href='https://cs.uwatering.com/#https://www.danielquzhao.com/' target='_blank'>
+                <img
+                  src='https://cs.uwatering.com/icon.white.svg'
+                  alt='CS Webring'
+                  style={{ width: '24px', height: 'auto', opacity: 0.8 }}
+                />
+              </a>
+              <a href='https://cs.uwatering.com/#https://www.danielquzhao.com/?nav=next'>→</a>
+            </div>
             <div className="flex space-x-6">
               <Link
                 href="mailto:danielquzhao@gmail.com"
