@@ -1,5 +1,7 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Github, Linkedin, Mail } from "lucide-react"
+import WebringIcon from "@/components/WebringIcon"
 
 export default function Footer() {
   return (
@@ -10,16 +12,13 @@ export default function Footer() {
             <div className="text-muted-foreground text-sm">
               Daniel Zhao © 2025
             </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <a href='https://cs.uwatering.com/#https://www.danielquzhao.com/?nav=prev'>←</a>
-              <a href='https://cs.uwatering.com/#https://www.danielquzhao.com/' target='_blank'>
-                <img
-                  src='https://cs.uwatering.com/icon.white.svg'
-                  alt='CS Webring'
-                  style={{ width: '24px', height: 'auto', opacity: 0.8 }}
-                />
-              </a>
-              <a href='https://cs.uwatering.com/#https://www.danielquzhao.com/?nav=next'>→</a>
+            <div className="flex items-center gap-2">
+              <Link className="text-muted-foreground hover:text-foreground transition-colors" href='https://cs.uwatering.com/#https://www.danielquzhao.com/?nav=prev'>←</Link>
+              <WebringIcon 
+                size={24}
+                className="text-muted-foreground"
+              />
+              <a className="text-muted-foreground hover:text-foreground transition-colors" href='https://cs.uwatering.com/#https://www.danielquzhao.com/?nav=next'>→</a>
             </div>
             <div className="flex space-x-6">
               <Link
