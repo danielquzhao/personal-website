@@ -73,6 +73,19 @@ export default function AboutPage() {
               <h2 className="text-2xl font-bold mb-4">Experience</h2>
               <div className="border-l-2 border-border pl-8 ml-8 space-y-6">
 
+              <div>
+                  <div className="flex items-start">
+                    <div className="relative w-16 h-16 rounded-full overflow-hidden bg-secondary flex-shrink-0 mr-6 -ml-16">
+                      <Image src="/warg-logo.png" alt="Waterloo Aerial Robotics Group" fill className="object-cover" />
+                    </div>
+                    <div className="pt-1">
+                      <h3 className="text-xl font-semibold">Waterloo Aerial Robotics Group</h3>
+                      <p className="text-muted-foreground">Autonomy Software Developer</p>
+                      <p className="text-muted-foreground">Apr. 2025 - Present</p>
+                    </div>
+                  </div>
+                </div>
+
                 <div>
                   <div className="flex items-start">
                     <div className="relative w-16 h-16 rounded-full overflow-hidden bg-secondary flex-shrink-0 mr-6 -ml-16">
@@ -144,7 +157,7 @@ export default function AboutPage() {
               <h2 className="text-2xl font-bold mb-4">Skills</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="border border-border rounded-lg p-4">
-                  <h3 className="text-lg font-semibold mb-2">Programming Languages</h3>
+                  <h3 className="text-lg font-semibold mb-2">Languages</h3>
                   <div className="flex flex-wrap gap-2">
                     <span className="bg-secondary px-2 py-1 rounded text-sm">C</span>
                     <span className="bg-secondary px-2 py-1 rounded text-sm">C++</span>
@@ -154,10 +167,12 @@ export default function AboutPage() {
                     <span className="bg-secondary px-2 py-1 rounded text-sm">CSS</span>
                     <span className="bg-secondary px-2 py-1 rounded text-sm">JavaScript</span>
                     <span className="bg-secondary px-2 py-1 rounded text-sm">TypeScript</span>
+                    <span className="bg-secondary px-2 py-1 rounded text-sm">SQL</span>
+                    <span className="bg-secondary px-2 py-1 rounded text-sm">Racket</span>
                   </div>
                 </div>
                 <div className="border border-border rounded-lg p-4">
-                  <h3 className="text-lg font-semibold mb-2">Frameworks & Libraries</h3>
+                  <h3 className="text-lg font-semibold mb-2">Technologies</h3>
                   <div className="flex flex-wrap gap-2">
                     <span className="bg-secondary px-2 py-1 rounded text-sm">React</span>
                     <span className="bg-secondary px-2 py-1 rounded text-sm">Next.js</span>
@@ -165,10 +180,11 @@ export default function AboutPage() {
                     <span className="bg-secondary px-2 py-1 rounded text-sm">Node.js</span>
                     <span className="bg-secondary px-2 py-1 rounded text-sm">Flask</span>
                     <span className="bg-secondary px-2 py-1 rounded text-sm">Tailwind CSS</span>
+                    <span className="bg-secondary px-2 py-1 rounded text-sm">Unity</span>
                   </div>
                 </div>
                 <div className="border border-border rounded-lg p-4">
-                  <h3 className="text-lg font-semibold mb-2">Tools & Technologies</h3>
+                  <h3 className="text-lg font-semibold mb-2">Tools</h3>
                   <div className="flex flex-wrap gap-2">
                     <span className="bg-secondary px-2 py-1 rounded text-sm">Git</span>
                     <span className="bg-secondary px-2 py-1 rounded text-sm">Bash</span>
@@ -180,6 +196,7 @@ export default function AboutPage() {
                     <span className="bg-secondary px-2 py-1 rounded text-sm">Firebase</span>
                     <span className="bg-secondary px-2 py-1 rounded text-sm">AWS</span>
                     <span className="bg-secondary px-2 py-1 rounded text-sm">Vercel</span>
+                    <span className="bg-secondary px-2 py-1 rounded text-sm">Ollama</span>
                   </div>
                 </div>
                 <div className="border border-border rounded-lg p-4">
