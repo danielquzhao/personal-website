@@ -14,7 +14,7 @@ export default function Footer() {
             </div>
             <div className="flex items-center gap-2">
               <Link className="text-muted-foreground hover:text-foreground transition-colors" href='https://cs.uwatering.com/#https://www.danielquzhao.com/?nav=prev'>←</Link>
-              <Link href="https://cs.uwatering.com/#your-site-here" target="_blank"><WebringIcon size={24} className="text-muted-foreground"/></Link>
+              <Link href="https://cs.uwatering.com/#https://www.danielquzhao.com/" target="_blank"><WebringIcon size={24} className="text-muted-foreground"/></Link>
               <Link className="text-muted-foreground hover:text-foreground transition-colors" href='https://cs.uwatering.com/#https://www.danielquzhao.com/?nav=next'>→</Link>
             </div>
             <div className="flex space-x-6">
