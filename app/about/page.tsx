@@ -81,20 +81,7 @@ export default function AboutPage() {
                     <div className="pt-1">
                       <h3 className="text-xl font-semibold">Waterloo Aerial Robotics Group</h3>
                       <p className="text-muted-foreground">Autonomy Software Developer</p>
-                      <p className="text-muted-foreground">Apr. 2025 - Present</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div>
-                  <div className="flex items-start">
-                    <div className="relative w-16 h-16 rounded-full overflow-hidden bg-secondary flex-shrink-0 mr-6 -ml-16">
-                      <Image src="/acupuncture-logo.png" alt="Classic Acupuncture" fill className="object-cover" />
-                    </div>
-                    <div className="pt-1">
-                      <h3 className="text-xl font-semibold">Classic Acupuncture Inc</h3>
-                      <p className="text-muted-foreground">Web Developer</p>
-                      <p className="text-muted-foreground">Mar. 2025 - Present</p>
+                      <p className="text-muted-foreground">May. 2025 - Aug. 2025</p>
                     </div>
                   </div>
                 </div>
@@ -120,7 +107,7 @@ export default function AboutPage() {
                     <div className="pt-1">
                       <h3 className="text-xl font-semibold">Royal Music Academy</h3>
                       <p className="text-muted-foreground">Piano Teacher</p>
-                      <p className="text-muted-foreground">Sep. 2023 - May. 2024</p>
+                      <p className="text-muted-foreground">Sep. 2023 - Jun. 2024</p>
                     </div>
                   </div>
                 </div>
