@@ -27,9 +27,6 @@ export default function Navbar() {
         <Link href="/projects" className="text-lg text-muted-foreground hover:text-foreground transition-colors">
           Projects
         </Link>
-        <Link href="/photos" className="text-lg text-muted-foreground hover:text-foreground transition-colors">
-          Photos
-        </Link>
       </nav>
       <div>
         <Button 
